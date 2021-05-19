@@ -10,6 +10,27 @@
 html {
   scroll-behavior: smooth;
 }
+#showMore1{
+  display: none;
+}
+#showMore2{
+  display:none;
+}
+#buttonShowMore2{
+  display:none;
+}
+#icon{
+  height: 50px;
+}
+#background1{
+  background-color: #FFFFFF1A
+}
+#textWhite{
+  color: white;
+}
+a{
+user-select: none;
+}
 </style>
 </head>
 <body id="top">
@@ -66,18 +87,72 @@ html {
     <!-- main body -->
     <!-- ################################################################################################ -->
     <div class="group excerpt" id="section1">
-      <article class="one_third first"><a class="imgover btmspace-30" href="#"><img src="images/demo/320x240.png" alt=""></a>
+      <article class="one_third first"><img src="images/demo/320x240.png" alt="">
+        <br>
+        <br>
         <h6 class="heading">Sapien lorem interdum</h6>
         <p>Purus in ornare feugiat ex vivamus bibendum augue nisl sit amet dictum quam aliquet id phasellus interdum leo sit amet&hellip;</p>
       </article>
-      <article class="one_third"><a class="imgover btmspace-30" href="#"><img src="images/demo/320x240.png" alt=""></a>
+      <article class="one_third"><img src="images/demo/320x240.png" alt="">
+        <br>
+        <br>
         <h6 class="heading">Convallis vulputate mi</h6>
         <p>Sem vestibulum lacus sit amet eleifend velit tellus quis ligula nam egestas eros sit amet vulputate porttitor proin leo&hellip;</p>
       </article>
-      <article class="one_third"><a class="imgover btmspace-30" href="#"><img src="images/demo/320x240.png" alt=""></a>
+      <article class="one_third"><img src="images/demo/320x240.png" alt="">
+        <br>
+        <br>
         <h6 class="heading">Turpis suscipit vitae magna</h6>
         <p>At pretium tempus erat ut vel hendrerit velit aliquam feugiat eget velit eu ultrices vivamus mauris leo aenean sagittis&hellip;</p>
       </article>
+      <br>
+    </div>
+    <center><a class="btn" onclick="showMore1()" id="buttonShowMore1" unselectable = "on">Покажи още</a></center>
+    <br>
+    <div class="group excerpt" id="showMore1">
+      <article class="one_third first"><img src="images/demo/320x240.png" alt="">
+        <br>
+        <br>
+        <h6 class="heading">Sapien lorem interdum</h6>
+        <p>Purus in ornare feugiat ex vivamus bibendum augue nisl sit amet dictum quam aliquet id phasellus interdum leo sit amet&hellip;</p>
+      </article>
+      <article class="one_third"><img src="images/demo/320x240.png" alt="">
+        <br>
+        <br>
+        <h6 class="heading">Convallis vulputate mi</h6>
+        <p>Sem vestibulum lacus sit amet eleifend velit tellus quis ligula nam egestas eros sit amet vulputate porttitor proin leo&hellip;</p>
+      </article>
+      <article class="one_third"><img src="images/demo/320x240.png" alt="">
+        <br>
+        <br>
+        <h6 class="heading">Turpis suscipit vitae magna</h6>
+        <p>At pretium tempus erat ut vel hendrerit velit aliquam feugiat eget velit eu ultrices vivamus mauris leo aenean sagittis&hellip;</p>
+      </article>
+      <br>
+    </div>
+    <br>
+    <center><a class="btn" onclick="showMore2()" id="buttonShowMore2" unselectable="on">Покажи още</a></center>
+    <br>
+    <div class="group excerpt" id="showMore2">
+      <article class="one_third first"><img src="images/demo/320x240.png" alt="">
+        <br>
+        <br>
+        <h6 class="heading">Sapien lorem interdum</h6>
+        <p>Purus in ornare feugiat ex vivamus bibendum augue nisl sit amet dictum quam aliquet id phasellus interdum leo sit amet&hellip;</p>
+      </article>
+      <article class="one_third"><img src="images/demo/320x240.png" alt="">
+        <br>
+        <br>
+        <h6 class="heading">Convallis vulputate mi</h6>
+        <p>Sem vestibulum lacus sit amet eleifend velit tellus quis ligula nam egestas eros sit amet vulputate porttitor proin leo&hellip;</p>
+      </article>
+      <article class="one_third"><img src="images/demo/320x240.png" alt="">
+        <br>
+        <br>
+        <h6 class="heading">Turpis suscipit vitae magna</h6>
+        <p>At pretium tempus erat ut vel hendrerit velit aliquam feugiat eget velit eu ultrices vivamus mauris leo aenean sagittis&hellip;</p>
+      </article>
+      <br>
     </div>
     <!-- ################################################################################################ -->
     <!-- / main body -->
@@ -85,58 +160,80 @@ html {
   </main>
 </div>
 
-<div class="wrapper row2 bgded overlay" style="background-image:url('images/demo/backgrounds/02.png');" id="section2">
+<script>
+  function showMore1(){
+    var buttonShowMore1 = document.getElementById("buttonShowMore1");
+    var showMore1 = document.getElementById("showMore1");
+    var buttonShowMore2 = document.getElementById("buttonShowMore2");
+
+    buttonShowMore1.style.display = "none";
+    showMore1.style.display = "inline";
+    buttonShowMore2.style.display = "inline";
+  }
+
+  function showMore2(){
+    console.log("test");
+    var buttonShowMore2 = document.getElementById("buttonShowMore2");
+    var showMore2 = document.getElementById("showMore2");
+
+    showMore2.style.display = "inline";
+    buttonShowMore2.style.display = "none";
+  }
+</script>
+
+<div class="wrapper row2 bgded overlay" style="background-image:url('images/backgroundInfo.jpg');" id="section2">
   <section class="hoc container clear">
     <!-- ################################################################################################ -->
     <div class="sectiontitle" id="section1">
-      <h6 class="heading">Porta consequat cras imperdiet</h6>
+      <h6 class="heading"> Информация за Ковид </h6>
       <p>Lobortis erat at sodales libero malesuada vel curabitur maximus</p>
     </div>
     <ul class="nospace group overview">
       <li class="one_third">
-        <article><a href="#"><i class="fa fa-headphones"></i></a>
-          <h6 class="heading"><a href="#">Arcu eleifend venenatis</a></h6>
-          <p>Sed non vulputate arcu nullam eu massa vitae urna vulputate efficitur in et&hellip;</p>
-          <footer><a href="#">View Details &raquo;</a></footer>
+        <article><a href="#"><i class="fa fa-headphones"></i></a> <br>
+          <h6 class="heading"><a href="https://www.dw.com/bg/%D0%BA%D0%BE%D1%80%D0%BE%D0%BD%D0%B0%D0%B2%D0%B8%D1%80%D1%83%D1%81-%D0%BD%D0%B0%D0%B9-%D1%81%D0%B8%D0%B3%D1%83%D1%80%D0%BD%D0%B8%D1%8F%D1%82-%D1%81%D0%B8%D0%BC%D0%BF%D1%82%D0%BE%D0%BC-%D0%BD%D0%B0-%D0%BA%D0%BE%D0%B2%D0%B8%D0%B4-19/a-55432232">Симптоми</a></h6>
+          <p>Повечето хора, които получават COVID-19,имат лека форма
+             на заболяването и могат да се възстановят у дома, без да се нуждаят от болнично лечение.</p>
+
         </article>
       </li>
       <li class="one_third">
-        <article><a href="#"><i class="fa fa-asl-interpreting"></i></a>
-          <h6 class="heading"><a href="#">Metus porta tincidunt</a></h6>
-          <p>Mauris eu tristique aenean dapibus facilisis risus sed vestibulum sed vitae&hellip;</p>
-          <footer><a href="#">View Details &raquo;</a></footer>
+        <article><a href="#"><i class="fa fa-asl-interpreting"></i></a><br>
+          <h6 class="heading"><a href="https://www.dw.com/bg/%D0%BA%D0%BE%D1%80%D0%BE%D0%BD%D0%B0%D0%B2%D0%B8%D1%80%D1%83%D1%81-%D0%BA%D0%BE%D0%B8-%D1%81%D0%B0-%D0%BD%D0%B0%D0%B9-%D0%B7%D0%B0%D1%81%D1%82%D1%80%D0%B0%D1%88%D0%B5%D0%BD%D0%B8-%D0%B8-%D0%B7%D0%B0%D1%89%D0%BE/a-52719996"> Кой е застрашен ?</a></h6>
+          <p>COVID-19 може да бъде по-опасен при възрастни хора,
+            но всеки може да го получи, включително млади хора, някои от които се разболяват сериозно.</p>
+
         </article>
       </li>
       <li class="one_third">
         <article><a href="#"><i class="fa fa-area-chart"></i></a>
-          <h6 class="heading"><a href="#">Lacus pulvinar euismod</a></h6>
-          <p>Pulvinar nulla elementum massa ut fermentum accumsan nulla luctus at risus&hellip;</p>
-          <footer><a href="#">View Details &raquo;</a></footer>
+          <h6 class="heading"><a href="https://www.dw.com/bg/%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%B8-%D0%BB%D0%B8-%D1%81%D0%B0-%D0%B2%D0%B0%D0%BA%D1%81%D0%B8%D0%BD%D0%B8%D1%82%D0%B5-%D1%81%D1%80%D0%B5%D1%89%D1%83-%D0%BA%D0%BE%D1%80%D0%BE%D0%BD%D0%B0%D0%B2%D0%B8%D1%80%D1%83%D1%81/a-55891064">Опасни ли са ваксините?</a></h6>
+          <p>Всички ваксини, използвани до момента, са преминали през строга
+             процедура за тестване и одобрение, за да се гарантира, че са безопасни и ефективни.</p>
+
         </article>
       </li>
       <li class="one_third">
         <article><a href="#"><i class="fa fa-balance-scale"></i></a>
           <h6 class="heading"><a href="#">Efficitur aliquet morbi</a></h6>
           <p>Vitae est eu felis ultrices tristique morbi eget libero ultricies semper enim&hellip;</p>
-          <footer><a href="#">View Details &raquo;</a></footer>
+
         </article>
       </li>
       <li class="one_third">
         <article><a href="#"><i class="fa fa-comments-o"></i></a>
           <h6 class="heading"><a href="#">Eget tempor interdum</a></h6>
           <p>Et malesuada fames ac ante ipsum primis in faucibus duis volutpat gravida nisi&hellip;</p>
-          <footer><a href="#">View Details &raquo;</a></footer>
+
         </article>
       </li>
       <li class="one_third">
         <article><a href="#"><i class="fa fa-gears"></i></a>
           <h6 class="heading"><a href="#">Cursus egestas curabitur</a></h6>
           <p>Aliquam lorem lorem ac iaculis eros pulvinar nec vivamus vestibulum nisl sem&hellip;</p>
-          <footer><a href="#">View Details &raquo;</a></footer>
         </article>
       </li>
     </ul>
-    <footer class="center"><a class="btn" href="#">Quis vehicula nulla</a></footer>
     <!-- ################################################################################################ -->
   </section>
 </div>
@@ -144,7 +241,7 @@ html {
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="wrapper row2 bgded overlay" style="background-image:url('images/demo/backgrounds/03.png');" id="section3">
+<div class="wrapper row2 bgded overlay" style="background-image:url('images/backgroundAbout.jpg');" id="section3">
   <section class="hoc container clear testimonials">
     <!-- ################################################################################################ -->
     <div class="sectiontitle">
@@ -153,19 +250,34 @@ html {
     </div>
     <ul class="nospace group btmspace-80">
       <li class="one_half first">
-        <blockquote>Suspendisse ut congue nisi eget consectetur eros donec vitae dolor nec ipsum malesuada auctor vitae euismod lacus praesent est a imperdiet feugiat sapien ipsum porta quam venenatis sodales felis</blockquote>
-        <figure class="clear"><img src="images/demo/60x60.png" alt="">
+        <blockquote id = "background1"> <ul id="textWhite">
+          <li>По-голяма осведоменост по този въпрос.</li>
+          <li>Подобряване на условията при труда на лекарите.</li>
+          <li>Стремеж за поддържане на психичното здраве на лекарите.</li>
+          <li>Към момента на написването 159 милиона души са заразени, а 3,3 милиона са починали.</li>
+          <li>Лекарите са на първа линия на тази пандемия и са били най-силно засегнати от вируса.</li>
+          <li>Само в България над 130 медицински работници са починали поради вируса.</li>
+        </ul>
+</blockquote>
+        <figure class="clear"><img id="icon" src="images/GoalsIcon.png">
           <figcaption>
-            <h6 class="heading">Огнян-Александър Траянов</h6>
-            <em>тест1</em></figcaption>
+            <h6 class="heading">Полза за обществото</h6>
+          </figcaption>
         </figure>
       </li>
       <li class="one_half">
-        <blockquote>Lacus eu turpis ut consequat ex id interdum morbi placerat commodo felis nec tempus vivamus cursus purus vel commodo venenatis in faucibus nunc quis pulvinar aliquam eu elit vestibulum lobortis mi</blockquote>
-        <figure class="clear"><img src="images/demo/60x60.png" alt="">
+        <blockquote id="background1">
+          <ul id="textWhite"> <li> Нашата цел е да създадем мемориален уебсайт , където човек да може да види лекарите, загубили живота
+               си в борбата с вируса.Спомнянето на тези герои е важно за тяхното наследство и за обществото ни като цяло. </li>
+
+          <li> Ние вярваме, че тези хора са герои. Трябва да отбелязваме тяхната саможертва по същия начин, както на войниците.
+             Доказано е, че събития като Ден на възпоменанието имат положително въздействие върху обществото. </li>
+          </ul>
+        </blockquote>
+        <figure class="clear"><img id = "icon" src="images/RamificationsIcon.png" alt="">
           <figcaption>
-            <h6 class="heading">Лъчезар Дончев</h6>
-            <em>тест2</em></figcaption>
+            <h6 class="heading">Нашите цели</h6>
+          </figcaption>
         </figure>
       </li>
     </ul>
@@ -191,11 +303,15 @@ html {
       <ul class="nospace btmspace-30 linklist contact">
         <li><i class="fa fa-map-marker"></i>
           <address>
-          Sofia , Bulgaria
+            Floyd Blyak, 1799 g.k. Mladost 2, Sofia
           </address>
         </li>
-        <li><i class="fa fa-phone"></i> 0884728322 </li>
+        <li><i class="fa fa-phone"></i> +359 88472 8322 </li>
         <li><i class="fa fa-envelope-o"></i> luchezard58@gmail.com </li>
+      </ul>
+      <ul class="nospace btmspace-30 linklist contact">
+        <li><i class="fa fa-phone"></i> +359 88769 5638 </li>
+        <li><i class="fa fa-envelope-o"></i> o.trajanov22@acsbg.org </li>
       </ul>
     </div>
     <div class="one_quarter">
@@ -209,10 +325,9 @@ html {
       </ul>
     </div>
     <div class="one_quarter">
-      <h6><p>
-        "Ако спечеля, печеля за цял народ - ако загубя, губя само мене си."
-                                      <p> - Васил Левски.</p>
-      </h6></p>
+      <p style = "font-size:18px">"Ако спечеля, печеля за цял народ - ако загубя, губя само мене си."
+                                      <p style = "font-size:18px">- Васил Левски.</p>
+                                    </p>
     </div>
    </center>
     <!-- ################################################################################################ -->
@@ -221,14 +336,6 @@ html {
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="wrapper row5">
-  <div id="copyright" class="hoc clear">
-    <!-- ################################################################################################ -->
-    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
-    <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
-    <!-- ################################################################################################ -->
-  </div>
-</div>
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
