@@ -31,8 +31,11 @@ html {
 a{
 user-select: none;
 }
-#mainav{
-  #content-mobile {display: none;}
+@media screen and (max-width: 600px) {
+  #mainav {
+    visibility: hidden;
+    display: none;
+  }
 }
 .fa-headphones{
   content: 'images/sickIcon.png';
