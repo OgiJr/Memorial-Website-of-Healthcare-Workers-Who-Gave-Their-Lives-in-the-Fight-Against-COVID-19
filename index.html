@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
-<title>Докторски мемориален уебсайт</title>
+<title>Медицински мемориален уебсайт</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
@@ -23,7 +23,7 @@ html {
   height: 50px;
 }
 #background1{
-  background-color: #FFFFFF1A
+  background-color: #FFFFFF4d
 }
 #textWhite{
   color: white;
@@ -40,27 +40,36 @@ user-select: none;
 .fa-headphones{
   content: 'images/sickIcon.png';
 }
+header{
+  background-color: #51b4ff00;
+}
+#headerrow{
+  background-color: #51b4ff40;
+}
+#section2{
+  background-color: #51b4ff40;
+}
 </style>
 </head>
 <body id="top">
 
-<div class="bgded overlay light" style="background-image:url('images/headerImg.png');">
+<div id="headerrow" class="bgded overlay light" style="background-image:url('images/headerImg.png');">
   <!-- ################################################################################################ -->
   <div class="wrapper row0">
   </div>
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
   <!-- ################################################################################################ -->
-  <div class="wrapper row1">
+  <div class="wrapper row1" id="headerrow">
     <header id="header" class="hoc clear">
       <!-- ################################################################################################ -->
       <div id="logo" class="fl_left">
-        <h1><a href="index.html">Докторски мемориален уебсайт</a></h1>
+        <h1><a href="index.html">Медицински мемориален уебсайт</a></h1>
       </div>
       <nav id="mainav" class="fl_right">
         <ul class="clear">
           <li class="active"><a class="nav-link scroll" href="#section1">Начална страница</a></li>
-          <li class="active"><a class="nav-link scroll" href="#section2">Информация за ковид</a></li>
+          <li class="active"><a class="nav-link scroll" href="#section2">Информация за COVID-19</a></li>
           <li class="active"><a class="nav-link scroll" href="#section3">За нас</a></li>
           <li class="active"><a class="nav-link scroll" href="#section4">Контакт</a></li>
       </nav>
@@ -73,12 +82,11 @@ user-select: none;
   <div id="pageintro" class="hoc clear">
     <!-- ################################################################################################ -->
     <article>
-      <h3 class="heading">В памет на тези, <br> жертвали се за други</h3>
-      <p>Мемориален уебсайт посветен на докторите починали в борбата с CoVid-19. <br>
+      <h3 class="heading">В памет на тези, <br> жертвали се за другите</h3>
+      <p>Мемориален уебсайт посветен на българските здравни работници починали в борбата с CoVid-19. <br>
           Уебсайтът цели да отрази храбростта на медицинския персонал дал
           или рискувал живота си за доброто на другите при борбата с пандемията.
-          Друг стремеж на страницата е да информира мнозинството за предпазните мерки, нужни за
-          личното здраве на всеки един от нас и най-вече за здравето на околните.  </p>
+          Целта ни е също да информираме обществеността за предпазните мерки за опазване на личното здраве на всеки един от нас и най-вече на здравето на околните. </p>
     </article>
     <!-- ################################################################################################ -->
   </div>
@@ -198,7 +206,7 @@ user-select: none;
       <li class="one_third">
         <article><a href="#"><img id="icon" src="images/sickIcon.png"/></a><br><br>
           <h6 class="heading"><a href="https://www.dw.com/bg/%D0%BA%D0%BE%D1%80%D0%BE%D0%BD%D0%B0%D0%B2%D0%B8%D1%80%D1%83%D1%81-%D0%BD%D0%B0%D0%B9-%D1%81%D0%B8%D0%B3%D1%83%D1%80%D0%BD%D0%B8%D1%8F%D1%82-%D1%81%D0%B8%D0%BC%D0%BF%D1%82%D0%BE%D0%BC-%D0%BD%D0%B0-%D0%BA%D0%BE%D0%B2%D0%B8%D0%B4-19/a-55432232">Симптоми</a></h6>
-          <p>Повечето хора, които получават COVID-19,имат лека форма
+          <p>Повечето хора, които се заразяват с COVID-19,имат лека форма
              на заболяването и могат да се възстановят у дома, без да се нуждаят от болнично лечение.</p>
         </article>
       </li>
@@ -206,7 +214,7 @@ user-select: none;
         <article><a href="#"><img id="icon" src="images/elderlyIcon.png"/></a><br><br>
           <h6 class="heading"><a href="https://www.dw.com/bg/%D0%BA%D0%BE%D1%80%D0%BE%D0%BD%D0%B0%D0%B2%D0%B8%D1%80%D1%83%D1%81-%D0%BA%D0%BE%D0%B8-%D1%81%D0%B0-%D0%BD%D0%B0%D0%B9-%D0%B7%D0%B0%D1%81%D1%82%D1%80%D0%B0%D1%88%D0%B5%D0%BD%D0%B8-%D0%B8-%D0%B7%D0%B0%D1%89%D0%BE/a-52719996"> Застрашените</a></h6>
           <p>COVID-19 може да бъде по-опасен при възрастни хора,
-            но всеки може да го получи, включително млади хора, някои от които се разболяват сериозно.</p>
+            но всеки може да се зарази, включително млади хора, някои от които се разболяват сериозно.</p>
         </article>
       </li>
       <li class="one_third">
@@ -227,7 +235,7 @@ user-select: none;
         <article><a href="#"><img id="icon" src="images/virusIcon1.png"></i></a><br><br>
           <h6 class="heading"><a href="https://kakda.org/%D1%82%D0%BE%D0%BF-10-%D1%84%D0%B0%D0%BA%D1%82%D0%B8-%D0%B7%D0%B0-%D0%B2%D0%B8%D1%80%D1%83%D1%81%D0%B8%D1%82%D0%B5/">Вирусите</a></h6>
           <p>Вирусите като цяло са изключително мистериозна и особена форма на живот, която се опитваме да изучаваме от известно време, макар и с малък успех.
-            Фактите доказват, че те може и да са най-странната форма на живот, намерена на Земята.</p>
+            Фактите показват, че те може и да са най-странната форма на живот на Земята.</p>
         </article>
       </li>
       <li class="one_third">
@@ -256,11 +264,11 @@ user-select: none;
       <li class="one_half first">
         <blockquote id = "background1"> <ul id="textWhite">
           <li>По-голяма осведоменост по този въпрос.</li>
-          <li>Подобряване на условията при труда на лекарите.</li>
-          <li>Стремеж за поддържане на психичното здраве на лекарите.</li>
-          <li>Към момента на написването 159 милиона души са били заразени, а 3,3 милиона са починали.</li>
-          <li>Лекарите са на първа линия на тази пандемия и са били най-силно засегнати от вируса.</li>
-          <li>Само в България над 130 медицински работници са починали поради вируса.</li>
+          <li>Подобряване на условията на труд на лекарите.</li>
+          <li>Стремеж за оказване на морална и психологическа подкрепа на здравните работници.</li>
+          <li>Броят на заразените с COVID-19 по света към май 2021 г. е 159 милиона, а починалите са над три милиона.</li>
+          <li>Здравните работиници са на първа линия на тази пандемия и са били най-силно засегнати от вируса.</li>
+          <li>Само в България над 130 медицински работници са починали от  COVID-19.</li>
         </ul>
 </blockquote>
         <figure class="clear"><img id="icon" src="images/GoalsIcon.png">
@@ -332,6 +340,9 @@ user-select: none;
       <p style = "font-size:18px">"Ако спечеля, печеля за цял народ - ако загубя, губя само мене си."
                                       <p style = "font-size:18px">- Васил Левски.</p>
                                     </p>
+    </div>
+    <div class="one_quarter">
+        <img src="https://dmdlnu87i51n1.cloudfront.net/v1/uk/ckmm2xc2p00063i5i6kc4tikz/0x0:1996x2000/960x960/lot_06_banksy_game_changer.jpg" height="75">
     </div>
    </center>
     <!-- ################################################################################################ -->
