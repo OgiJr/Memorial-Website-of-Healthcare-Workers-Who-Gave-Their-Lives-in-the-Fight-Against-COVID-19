@@ -19,10 +19,16 @@ html {
 #showMore3{
   display:none;
 }
+#showMore4{
+  display: none;
+}
 #buttonShowMore2{
   display:none;
 }
 #buttonShowMore3{
+  display:none;
+}
+#buttonShowMore4{
   display:none;
 }
 #icon{
@@ -211,6 +217,36 @@ header{
       </article>
       <br>
     </div>
+    <br>
+    <center><a class="btn" onclick="showMore4()" id="buttonShowMore4" unselectable="on">Покажи още</a></center>
+    <br>
+    <div class="group excerpt" id="showMore4">
+      <article class="one_third first"><img src="https://static.bnr.bg/gallery/cr/medium/6ddee70d6cc52904ff52bf6746887d7d.jpg" alt="">
+        <br>
+        <br>
+        <h6 class="heading"> <a href="" target="_blank"> проф. Иван Манчев </a></h6>
+        <p>Проф. Манчев беше дългогодишен ръководител на Катедрата по неврология, психиатрия и МБС. През 2014г. проф.Манчев е избран за академик в Международната Славянска академия за наука , образование, изкуство и култура. Изкарва един мандат като помощник-декан в Медицинския факултет на Тракийския университет.
+          През годините той е изградил и помогнал за професионалното израстване на десетки специализанти и докторанти.Поклон пред светлата му памет!</p>
+      </article>
+      <article class="one_third"><img src="" alt="">
+        <br>
+        <br>
+        <h6 class="heading"> <a href="" target="_blank"> Д-р Живко Атанасов </a></h6>
+        <p>Д-р Атанасов беше един от най-уважаваните лекари в Хасково. Завършва медицина през 1981 г. в Пловдив. Започва работа в Хирургично отделение в Димитровград, придобива специалност по хирургия през 1986 г. От 2000 г. е началник на отделение по обща Хирургия, а от 2006 г. е началник на Хирургично отделение при МБАЛ – Хасково.
+           Д-р Атанасов ни напусна, но с достойнство изпълняваше своя професионален и морален дълг и се грижеше с любов за своите пациенти.
+           Поклон пред неговата всеотдайност и смелост.</p>
+      </article>
+      <article class="one_third"><img src="" alt="">
+        <br>
+        <br>
+        <h6 class="heading"> <a href="" target="_blank"> Д-р Бойко Вълканов </a></h6>
+        <p>Д-р Вълканов завършва медицина в Медицински университет – Пловдив. Работи последователно в Сопот, Либия, МБАЛ „Св. Пантелеймон", практика по неврологични болести "Невроздраве" и МЦ „Тримонциум“. Специализирал е в областта на диагностиката и лечението на сънната апнея.
+          „Безкрайно отзивчив и колегиален, отдаден на работата и пациентите си, д-р Вълканов остана до последно в служба на медицината“, споделят колегите му от МЦ „Тримонциум“-Пловдив.
+           Поклон пред паметта му!</p>
+      </article>
+      <br>
+    </div>
+
 
 
     <!-- ################################################################################################ -->
@@ -243,9 +279,19 @@ header{
   function showMore3(){
     var buttonShowMore3 = document.getElementById("buttonShowMore3");
     var showMore3 = document.getElementById("showMore3");
+    var buttonShowMore4 = document.getElementById("buttonShowMore4");
 
     showMore3.style.display = "inline";
     buttonShowMore3.style.display = "none";
+    buttonShowMore4.style.display = "inline";
+  }
+
+  function showMore4(){
+    var buttonShowMore4 = document.getElementById("buttonShowMore4");
+    var showMore4 = document.getElementById("showMore4");
+
+    showMore4.style.display = "inline";
+    buttonShowMore4.style.display = "none";
   }
 
 </script>
