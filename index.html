@@ -34,6 +34,9 @@ html {
 #showMore8{
   display: none;
 }
+#showMore9{
+  display: none;
+}
 #buttonShowMore2{
   display:none;
 }
@@ -56,6 +59,9 @@ html {
   display:none;
 }
 #buttonShowMore8{
+  display:none;
+}
+#buttonShowMore9{
   display:none;
 }
 #icon{
@@ -405,6 +411,43 @@ header{
       </article>
       <br>
     </div>
+     <br>
+    <center><a class="btn" onclick="showMore9()" id="buttonShowMore9" unselectable="on">Покажи още</a></center>
+    <br>
+    <div class="group excerpt" id="showMore9">
+      <article class="one_third first"><img src="https://cardiacinstitute.bg/wp-content/uploads/2017/11/d-r-marin-marinov.jpg" alt="">
+        <br>
+        <br>
+        <h6 class="heading"> <a href="https://dariknews.bg/novini/bylgariia/poreden-bylgarski-lekar-zagubi-bitkata-s-covid-19-2246439" target="_blank"> Д-р Маринчо Маринов  </a></h6>
+        <p>Д-р Маринов е завършил Медицинския университет в Плевен, специалист е по обща медицина и хирургия и до последно е работил в ЦСМП-Плевен.
+           Той се е лекувал сам до последно, за да не бъде в тежест на и без това претоварените си колеги.
+           Поклон, д-р Маринов,заразил се от Ковид 19, по време на работа, до последно се борил с болестта сам, за да не товари колегите си !
+           Съболезнования на колегите от ЦСМП Плевен  и близките му!</p>
+      </article>
+        <br>
+        <br>
+      <article class="one_third"><img src="https://telemedia.bg/web/thumbs/624x468/news/22498/image/Nikola-Penchev_624x468_crop_and_resize_to_fit_478b24840a.png" alt="">
+        <br>
+        <br>
+        <h6 class="heading"> <a href="https://blsbg.com/bg/bls-izkazva-sboleznovaniia-na-semeistvoto-kolegite-i-blizkite-na-d-r-svetoslav-nedelchev_p5111.html" target="_blank"> д-р Светослав Неделчев </a></h6>
+        <p>Български лекарски съюз изказва своите дълбоки съболезнования на семейството,колегите и близките на починалия д-р Светослав Неделчев, управителна МБАЛ “Царица Йоанна-Провадия”.
+           С болка и прискърбие посрещнахме новината за смъртта на д-р Неделчев, който загуби битката с Covid-19.
+           Специалистът по нервни болести и дългогодишен управителна болницата в гр. Провадия ни напусна в разцвета на силите си, но с достойнство изпълняваше своя професионален и морален дълг и се грижеше за своите пациенти.
+           Поклон пред неговата всеотдайност и смелост!
+           Светла му памет!</p>
+      </article>
+      <article class="one_third"><img src="http://epicenter.bg/images/news/112020/pics/1605614487.jpg" alt="">
+        <br>
+        <br>
+        <h6 class="heading"> <a href="https://prakticheska-pediatria.net/2020/11/16/pochina-d-r-kambov/" target="_blank"> д-р Костадин Камбов  </a></h6>
+        <p>В нощта на 14 срещу 15 ноември 2020 г. почина д-р Костадин Камбов – още един лекар загубил битката на предния фронт.
+           Д-р Камбов завършва медицина през 1977 г., а от 1983 г. има призната специалност по педиатрия. От 1991 г. до кончината си неуморно, всеотдайно и безотказно служи на българските деца.
+           Носи и голямата отговорност в продължение на почти 30 години като началник на отделението по педиатрия в МБАЛ “Иван Скендеров” в Гоце Делчев. Достоен човек с голямо сърце…
+           УС на Българската педиатрична асоциация изказва искрените си съболезнования на семейството на д-р Камбов за непрежалимата загуба.
+        </p>
+      </article>
+      <br>
+    </div>
 
     <!-- ################################################################################################ -->
     <!-- / main body -->
@@ -486,9 +529,19 @@ header{
   function showMore8(){
     var buttonShowMore8 = document.getElementById("buttonShowMore8");
     var showMore8 = document.getElementById("showMore8");
+    var buttonShowMore9 = document.getElementById("buttonShowMore9");
 
     showMore8.style.display = "inline";
     buttonShowMore8.style.display = "none";
+    buttonShowMore9.style.display = "inline";
+  }
+
+  function showMore9(){
+    var buttonShowMore9 = document.getElementById("buttonShowMore9");
+    var showMore9 = document.getElementById("showMore9");
+
+    showMore9.style.display = "inline";
+    buttonShowMore9.style.display = "none";
   }
 
 </script>
