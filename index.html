@@ -37,6 +37,9 @@ html {
 #showMore9{
   display: none;
 }
+#showMore10{
+  display: none;
+}
 #buttonShowMore2{
   display:none;
 }
@@ -62,6 +65,9 @@ html {
   display:none;
 }
 #buttonShowMore9{
+  display:none;
+}
+#buttonShowMore10{
   display:none;
 }
 #icon{
@@ -448,6 +454,38 @@ header{
       </article>
       <br>
     </div>
+    <br>
+    <center><a class="btn" onclick="showMore10()" id="buttonShowMore10" unselectable="on">Покажи още</a></center>
+    <br>
+    <div class="group excerpt" id="showMore10">
+      <article class="one_third first"><img src="https://www.lovech.bg/uploads/posts/doktor-galin-kirkov.jpg" alt="">
+        <br>
+        <br>
+        <h6 class="heading"> <a href="https://www.lovech.bg/bg/novini/koronavirusat-otnese-izvestniya-lovchaliya-d-r-galin-kirkov/" target="_blank"> Д-р Галин Кирков  </a></h6>
+        <p>Името на д-р Кирков  е свързано с първите прояви на демокрацията в Ловеч, той беше активен общественик и изявен политик от СДС. Известно време през 90-те години работи  като  началник управление „Хуманитарна политика“ в Община Ловеч.
+           Д-р Галин Кирков е завършил Езиковата гимназия  през 1973 г. с немски език. Като лекар-рентгенолог той е помогнал на много хора, както с медицинската си експертиза, така и с добра и дума и успокоение. Близките му припомнят още, че макар и пенсионер, той продължил да работи. Заразява се с коронавирус от пациентите си, които преглеждаше до последно в 18-то ДКЦ в София.
+           След усложненията сърцето му не е издържало.</p>
+      </article>
+        <br>
+        <br>
+      <article class="one_third"><img src="https://www.bulnews.bg/media/cache/article/uploads/313dbb76c4bc78e1362baee02a4cb5b7.jpeg" alt="">
+        <br>
+        <br>
+        <h6 class="heading"> <a href="https://dnews.bg/koronavirusat-otne-zivota-na-d-r-said-ahmed-daud.html" target="_blank"> Д-р Саид Дауд </a></h6>
+        <p>Професионалният път на д-р Дауд в Северозапада започва като хирург в мездренската болница. По-късно медикът с ливанско потекло работи в Спешния център във Враца.
+           През последните години той стана автор на поредица инициативи за благото на врачани. Първоначално заработи „Дауд Медицински център“ с дежурен кабинет в ж.к. „Дъбника“ , където пациенти с нужда от лекарска помощ нощем и през почивните дни получаваха такава в извънработното време на личните лекари.
+           Според близки на семейството, д-р Саид Дауд  е страдал и от онкологично заболяване на гласните връзки, последиците от което по всяка вероятност допълнително са влошили състоянието му.</p>
+      </article>
+      <article class="one_third"><img src="https://i2.offnews.bg/events/2020/11/20/740753/phpu7rnrr_559x345.jpg" alt="">
+        <br>
+        <br>
+        <h6 class="heading"> <a href="https://bnr.bg/plovdiv/post/101376673/pochinaha-izvesten-plovdivski-lekar-i-direktor-na-asenovgradsko-uchilishte" target="_blank"> Д-р Кирил Еленски </a></h6>
+        <p>Д-р Кирил Еленски е роден през 1958 година  в Пловдив.  През 1985 година завършва Медицинския университет със специалности „Вътрешни болести“ и „Обща медицина“. Има и магистърстка степен по макроикономика от Пловдивския университет. Започва кариерата си в Карлово, където работи 13 години като участъков лекар, завеждащ вътрешно отделение и зам.директор на общинската болница. От 2000 година основава амбулатория за първична медицинска помощ.
+         Д-р Еленски винаги се е ръководил от морално-етичните норми в лекарската професия и присърце е работил за утвърждаване авторитета на съсловната организация и съхраняване на доверието на хората към лекарската професия.
+        </p>
+      </article>
+      <br>
+    </div>
 
     <!-- ################################################################################################ -->
     <!-- / main body -->
@@ -539,9 +577,19 @@ header{
   function showMore9(){
     var buttonShowMore9 = document.getElementById("buttonShowMore9");
     var showMore9 = document.getElementById("showMore9");
+    var buttonShowMore10 = document.getElementById("buttonShowMore10");
 
     showMore9.style.display = "inline";
     buttonShowMore9.style.display = "none";
+    buttonShowMore10.style.display = "inline";
+  }
+
+  function showMore10(){
+    var buttonShowMore10 = document.getElementById("buttonShowMore10");
+    var showMore10 = document.getElementById("showMore10");
+
+    showMore10.style.display = "inline";
+    buttonShowMore10.style.display = "none";
   }
 
 </script>
