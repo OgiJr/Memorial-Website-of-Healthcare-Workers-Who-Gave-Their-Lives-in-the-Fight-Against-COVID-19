@@ -40,6 +40,9 @@ html {
 #showMore10{
   display: none;
 }
+#showMore11{
+  display: none;
+}
 #buttonShowMore2{
   display:none;
 }
@@ -68,6 +71,9 @@ html {
   display:none;
 }
 #buttonShowMore10{
+  display:none;
+}
+#buttonShowMore11{
   display:none;
 }
 #icon{
@@ -486,6 +492,43 @@ header{
       </article>
       <br>
     </div>
+      <br>
+    <center><a class="btn" onclick="showMore11()" id="buttonShowMore11" unselectable="on">Покажи още</a></center>
+    <br>
+    <div class="group excerpt" id="showMore11">
+      <article class="one_third first"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyzn37DscMcKeqXHKORyNUf06o6uetcReYqw&usqp=CAU" alt="">
+        <br>
+        <br>
+        <h6 class="heading"> <a href="https://www.bgonair.bg/a/2-bulgaria/209889-razlog-skarbi-za-pochinaliya-ot-kovid-19-d-r-spas-radev" target="_blank"> д-р Спас Радев Разлог   </a></h6>
+        <p>Обичаният кардиолог се е заразил с Ковид в началото на месеца, докато лекувал болни в разложката болница. До последно бил на първа линия, въпреки че не се чувствал добре. Със смъртта на д-р Радев работата в Разложката болница става все по-непосилна, заради липсата на медици.
+           "Работеше по цял ден и беше пример за всички ни. Съжаляваме, нашите съболезнования на семейството. Прекрасно семейство- д-р Божикова и двете му прекрасни деца. Съжалявам, но просто думите не стигат, за да изкажа и моята лична болка и болката на всички ни. Да почива в мир!", каза д-р Лиляна Жегова.</p>
+      </article>
+        <br>
+        <br>
+      <article class="one_third"><img src="https://clinica.bg/pictures/pic_big/gallery/news/160658401071877.jpg" alt="">
+        <br>
+        <br>
+        <h6 class="heading"> <a href="https://trud.bg/%D1%85%D0%B8%D1%80%D1%83%D1%80%D0%B3-%D0%BE%D1%82-%D0%B1%D1%83%D1%80%D0%B3%D0%B0%D1%81-%D0%B7%D0%B0%D0%B3%D1%83%D0%B1%D0%B8-%D0%B1%D0%B8%D1%82%D0%BA%D0%B0%D1%82%D0%B0-%D1%81-covid-19/" target="_blank"> Д-р Саид Дауд </a></h6>
+        <p>Един от изтъкнатите хирурзи в Бургас д-р Бирджан Йозтюрк загуби битката с COVID-19.
+           Всеотдаен лекар и изключителен професионалист - така колегите му описват д-р Йозтюрк, който беше проктолог, специалист по коремна и минимално инванзивна хирургия в МБАЛ "Лайф хоспитал", информира БТВ.
+           Не е известно да е имал придружаващи заболявания. Въпреки приложеното лечение, състоянието му рязко се влошава. 43-годишният хирург има две деца.
+         </p>
+      </article>
+      <article class="one_third"><img src="https://i.id24.bg/i/1026494.jpg" alt="">
+        <br>
+        <br>
+        <h6 class="heading"> <a href="https://www.credoweb.bg/publication/125643/pochina-urologat-prof-mitko-tsvetkov" target="_blank"> проф. Митко Цветков </a></h6>
+        <p>Българският лекарски съюз изказва своите дълбоки съболезнования на семейството и близките на починалия проф. Митко Цветков, уролог от Пета МБАЛ - София ЕАД.
+           Д-р Цветков изгуби битката с коварната болест
+           и ни напусна, но с достойнство изпълняваше своя професионален и морален дълг и се грижеше за своите пациенти. Блестящ професионалист, но преди всичко прекрасен човек
+           Ще липсва на всички ни!
+           Поклон пред неговата всеотдайност и смелост.
+           Светла му памет!
+        </p>
+      </article>
+      <br>
+    </div>
+
 
     <!-- ################################################################################################ -->
     <!-- / main body -->
@@ -587,9 +630,19 @@ header{
   function showMore10(){
     var buttonShowMore10 = document.getElementById("buttonShowMore10");
     var showMore10 = document.getElementById("showMore10");
+    var buttonShowMore11 = document.getElementById("buttonShowMore11");
 
     showMore10.style.display = "inline";
     buttonShowMore10.style.display = "none";
+    buttonShowMore11.style.display = "inline";
+  }
+
+  function showMore11(){
+    var buttonShowMore11 = document.getElementById("buttonShowMore11");
+    var showMore11 = document.getElementById("showMore11");
+
+    showMore11.style.display = "inline";
+    buttonShowMore11.style.display = "none";
   }
 
 </script>
